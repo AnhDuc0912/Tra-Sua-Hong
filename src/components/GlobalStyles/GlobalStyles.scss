@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
-    --primaryColor: #fe2c55;
+    --primaryColor: #fe2c55; 
+
+    //Default Layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
 }
 
 html {
@@ -13,4 +17,5 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
+    margin: 0;
 }
