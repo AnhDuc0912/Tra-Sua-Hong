@@ -1,0 +1,25 @@
+.content {
+    width: 224px;
+    position: relative;
+    margin-right: -20px;
+    
+}
+
+.content::after {
+    content: "";
+    border: 10px solid;
+    border-color: transparent transparent var(--white);
+    position: absolute;
+    top: -18px;
+    right: 22px;
+}
+
+.btn-content {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 !important;
+
+    span {
+        text-align: start;
+    }
+}

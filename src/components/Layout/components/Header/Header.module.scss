@@ -6,14 +6,15 @@
 
     width: 100%;
     height: var(--default-layout-header-height);
+    padding: var(--default-layout-padding);
     box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .inner {
-    height: 100%;
     width: var(--default-layout-width);
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +22,7 @@
 
 .search,
 .search-result {
-    width: 361px;
+    width: 500px;
 }
 
 .search {
@@ -96,4 +97,33 @@
     &:active {
         background-color: rgba(22, 24, 35, 0.06);
     }
+}
+
+.actions {}
+
+.more-btn {
+    font-size: 1.8rem;
+    margin-left: 28px;
+    padding: 2px 8px;
+}
+
+.more-btn:hover{
+    animation: fadeOutAnimation 3s forwards;
+}
+
+//Menu Items
+
+.menu-items {
+    width: 224px;
+    position: relative;
+    margin-right: -20px;
+}
+
+.menu-items::after {
+    content: "";
+    border: 10px solid;
+    border-color: transparent transparent var(--white);
+    position: absolute;
+    top: -18px;
+    right: 22px;
 }
