@@ -1,11 +1,11 @@
-.content {
+.menu-list {
     width: 224px;
     position: relative;
     margin-right: -20px;
     
 }
 
-.content::after {
+.menu-list::after {
     content: "";
     border: 10px solid;
     border-color: transparent transparent var(--white);
@@ -22,4 +22,30 @@
     span {
         text-align: start;
     }
+}
+
+.heading {
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+}
+
+.back-btn {
+    width: 50px;
+    font-size: 2rem;
+    text-align: end;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.heading-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.separate {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
 }

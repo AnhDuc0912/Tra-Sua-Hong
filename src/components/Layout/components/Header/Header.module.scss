@@ -44,7 +44,7 @@
         background-color: transparent;
     }
 
-    input:not(:placeholder-shown)~.search-btn {
+    input:focus~.search-btn {
         color: rgba(22, 24, 35, 0.75);
     }
 
@@ -99,7 +99,15 @@
     }
 }
 
-.actions {}
+//Actions
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions-icon {
+    font-size: 2rem;
+}
 
 .more-btn {
     font-size: 1.8rem;
@@ -107,8 +115,26 @@
     padding: 2px 8px;
 }
 
-.more-btn:hover{
+.more-btn:hover {
     animation: fadeOutAnimation 3s forwards;
+}
+
+.actions-btn {
+    font-size: 2.2rem;
+    color: #161823;
+    background-color: transparent;
+    padding: 4px 12px;
+    cursor: pointer;
+    margin-left: 16px !important;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
 }
 
 //Menu Items
