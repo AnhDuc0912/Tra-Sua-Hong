@@ -24,7 +24,6 @@ function Menu({children, items = [], onChange = defaultFn}) {
             key={index} 
             data={item} 
             onClick={() => {
-              console.log(item);
               if(isParent){
                 setHistory((prev) => [...prev, item.children]);
               } else {
@@ -39,7 +38,6 @@ function Menu({children, items = [], onChange = defaultFn}) {
         <Tippy
           interactive
           appendTo="parent"
-          animation="fade"
           placement="bottom-end"
           delay={[0, 1000]}
           render={(attrs) => (
