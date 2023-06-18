@@ -59,6 +59,7 @@ input,
 
 a[href] {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 @keyframes fadeOutAnimation {
