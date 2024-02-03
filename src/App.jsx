@@ -2,8 +2,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { publicRoutes } from "~/routes";
 import DefaultLayout from "~/components/Layout";
 import { Fragment } from "react";
+import { createTheme } from "@mui/material";
 
 function App() {
+  
+
   return (
     <Router>
       <div className="App">
@@ -13,14 +16,14 @@ function App() {
             const Layout = route.layout === null ? Fragment : DefaultLayout;
 
             return (
-              <Route 
-                key={index} 
-                path={route.path} 
+              <Route
+                key={index}
+                path={route.path}
                 element={
                   <Layout>
-                    <Element/>
+                    <Element />
                   </Layout>
-                } 
+                }
               />
             );
           })}
@@ -30,5 +33,4 @@ function App() {
   );
 }
 
- 
 export default App;
