@@ -15,16 +15,13 @@ import {
 } from "@mui/material";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import MoneyIcon from "@mui/icons-material/Money";
-import { ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
-import styles from "./Sidebar.module.scss";
-import classNames from "classnames/bind";
-
-const cx = classNames.bind(styles);
+import "./Sidebar.module.scss";
 
 export default function Sidebar() {
   const [open, setOpen] = React.useState(true);
-  const [value1, setValue1] = React.useState([20, 37]);
+  const [value1, setValue1] = React.useState([0, 200]);
 
   const handleClick = () => {
     setOpen(!open);

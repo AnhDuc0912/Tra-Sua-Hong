@@ -3,9 +3,3 @@
     min-height: 1000px;
     border-right: solid 1px var(--border-color);
 }
-
-@media only screen and (max-width: 600px) {
-    aside {
-        display: none;
-    }
-}

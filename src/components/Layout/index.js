@@ -1,3 +1,2 @@
-import DefaultLayout from './DefaultLayout';
-
-export default DefaultLayout
+export { default, default as DefaultLayout } from './DefaultLayout';
+export { default as NoSideBar } from './NoSideBar' ;
